@@ -28,7 +28,6 @@ object SparkContextExample {
     .master("local[1]")
     .appName("SparkByExample-test")
     .getOrCreate();
-
   println("Second SparkContext:")
   println("APP Name :"+sparkSession2.sparkContext.appName);
   println("Deploy Mode :"+sparkSession2.sparkContext.deployMode);
